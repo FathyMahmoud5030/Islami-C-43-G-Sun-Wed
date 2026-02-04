@@ -1,20 +1,20 @@
-package com.route.islamic43gsunwed.fragments
+package com.route.islamic43gsunwed.fragments.hadeth
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.route.islamic43gsunwed.databinding.FragmentQuranBinding
+import com.route.islamic43gsunwed.databinding.FragmentHadethBinding
 
-class QuranFragment : Fragment() {
-    private lateinit var binding: FragmentQuranBinding
+class HadethFragment : Fragment() {
+    private lateinit var binding: FragmentHadethBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentQuranBinding.inflate(inflater, container, false)
+        binding = FragmentHadethBinding.inflate(inflater, container, false)
         return binding.root
     }
 

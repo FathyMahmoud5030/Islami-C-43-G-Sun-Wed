@@ -3,18 +3,20 @@ package com.route.islamic43gsunwed
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
 import com.route.islamic43gsunwed.databinding.ActivityHomeBinding
-import com.route.islamic43gsunwed.fragments.HadethFragment
-import com.route.islamic43gsunwed.fragments.QuranFragment
+import com.route.islamic43gsunwed.fragments.hadeth.HadethFragment
+import com.route.islamic43gsunwed.fragments.quran.QuranFragment
 import com.route.islamic43gsunwed.fragments.RadioFragment
 import com.route.islamic43gsunwed.fragments.TasbeehFragment
 
 class HomeActivity : AppCompatActivity() {
     private lateinit var binding: ActivityHomeBinding
     override fun onCreate(savedInstanceState: Bundle?) {
+        installSplashScreen()
         super.onCreate(savedInstanceState)
         binding = ActivityHomeBinding.inflate(layoutInflater)
         setContentView(binding.root)

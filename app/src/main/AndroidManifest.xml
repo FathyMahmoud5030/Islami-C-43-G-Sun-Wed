@@ -12,8 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IslamiC43GSunWed">
         <activity
+            android:name=".chapterDetails.ChapterDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".HomeActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
